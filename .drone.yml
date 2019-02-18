@@ -1,0 +1,12 @@
+kind: pipeline
+name: latest
+# Push to Docker
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    repo: ikifar/Server-Update-Website
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
