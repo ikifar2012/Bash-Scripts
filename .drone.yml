@@ -1,6 +1,6 @@
 kind: pipeline
 name: latest
-# Push to Docker
+## Push to Docker
 steps:
 - name: docker
   image: plugins/docker
