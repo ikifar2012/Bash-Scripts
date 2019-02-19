@@ -25,6 +25,5 @@ echo 2 seconds to cancel
 sleep 1
 echo 1 seconds to cancel 
 sleep 1
-echo rebooting
 echo goodbye
 sudo reboot
