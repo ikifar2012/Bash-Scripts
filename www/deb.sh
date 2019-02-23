@@ -4,6 +4,8 @@ sleep 3
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
+sudo apt-get autoremove -y
+sudo apt-get autoclean -y
 echo rebooting 
 echo 10 seconds to cancel 
 sleep 1
