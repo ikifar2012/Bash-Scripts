@@ -1,2 +1,2 @@
-# Server-Update [![Build Status](https://drone.steplock.ca/api/badges/ikifar2012/Server-Update/status.svg)](https://drone.steplock.ca/ikifar2012/Server-Update)
+# Server-Update [![Netlify Status](https://api.netlify.com/api/v1/badges/69aaf366-4817-4ae0-8d66-f5140c30357b/deploy-status)](https://app.netlify.com/sites/server-update/deploys)
 ## Debian Server Update Script
