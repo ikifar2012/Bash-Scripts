@@ -8,3 +8,4 @@ mkdir -p $backupdir
 echo "Backing up old files to $backupdir"
 else
 echo "Your files are being overwritten"
+fi
