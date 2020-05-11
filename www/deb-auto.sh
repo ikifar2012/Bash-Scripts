@@ -1,10 +1,9 @@
 #!/bin/bash
 date="date -I"
 backupdir="$PWD/backup/$date"
-echo "Would you like to backup your current configuration? [Y/n]"
-read userin
-
-if [[ $userin = "Y" ]]
+read -p "Would you like to backup your current configuration? [Y/n]" userin
+userin= $(echo $userin | tr '[:upper:]' '[:lower:]')
+if [[ $userin = "y" ]]
 then 
 mkdir -p $backupdir
 echo "Backing up old files to $backupdir"
