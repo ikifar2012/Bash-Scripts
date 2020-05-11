@@ -2,9 +2,9 @@
 date="date -I"
 backupdir="$PWD/backup/$date"
 echo "Would you like to backup your current configuration? [Y/n]"
-read answer
+read userin
 
-if [[ $answer = "Y" ]]
+if [[ $userin = "Y" ]]
 then 
 mkdir -p $backupdir
 echo "Backing up old files to $backupdir"
