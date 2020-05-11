@@ -2,7 +2,7 @@
 date=$(date -I)
 backupdir="$PWD/backup/$date"
 read -p "Would you like to backup your current configuration? [Y/n]" userin
-userin= $(echo $userin | tr '[:upper:]' '[:lower:]')
+userin=$(echo ${$userin} | tr '[:upper:]' '[:lower:]')
 if [[ $userin = "y" ]]
 then 
 mkdir -p $backupdir
