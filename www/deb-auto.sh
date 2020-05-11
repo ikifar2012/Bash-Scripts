@@ -1,7 +1,8 @@
 #!/bin/bash
 date="date -I"
 backupdir="$PWD/backup/$date"
-read -p "Would you like to backup your current configuration? [Y/n]" answer
+echo "Would you like to backup your current configuration? [Y/n]"
+read answer
 
 if [[ $answer = "Y" ]]
 then 
