@@ -1,7 +1,6 @@
 #!/bin/bash
 date="$(date -I)"
 backupdir="$PWD/backup/$date"
-userin=y
 read -p "Would you like to backup your current configuration? [Y/n]" userin
 userin="$(echo ${userin} | tr '[:upper:]' '[:lower:]')"
 if [[ $userin = "y" ]]
@@ -13,4 +12,6 @@ cp -p /etc/apt/apt.conf.d/20auto-upgrades $backupdir
 echo "Files backed up"
 else
 echo "Your files are being overwritten"
+wget https://up.steplock.ca/files/20auto-upgrades > /etc/apt/apt.conf.d/20auto-upgrades
+
 fi
