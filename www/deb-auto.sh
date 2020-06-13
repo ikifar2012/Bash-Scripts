@@ -1,6 +1,7 @@
 #!/bin/bash
 date="$(date -I)"
 backupdir="$PWD/backup/$date"
+userin=y
 read -p "Would you like to backup your current configuration? [Y/n]" userin
 userin="$(echo ${userin} | tr '[:upper:]' '[:lower:]')"
 if [[ $userin = "y" ]]
