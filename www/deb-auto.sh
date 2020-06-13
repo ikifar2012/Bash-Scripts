@@ -12,6 +12,6 @@ cp -p /etc/apt/apt.conf.d/20auto-upgrades $backupdir
 echo "Files backed up"
 else
 echo "Your files are being overwritten"
-wget https://up.steplock.ca/files/20auto-upgrades > /etc/apt/apt.conf.d/20auto-upgrades
-
+wget https://raw.githubusercontent.com/ikifar2012/Server-Update/master/www/files/20auto-upgrades > /etc/apt/apt.conf.d/20auto-upgrades
+wget https://raw.githubusercontent.com/ikifar2012/Server-Update/master/www/files/50unattended-upgrades > /etc/apt/apt.conf.d/50unattended-upgrades
 fi
