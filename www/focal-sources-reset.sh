@@ -33,9 +33,8 @@ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
-else
-
 fi
+
 echo "Install Complete"
 echo "Please Run:"
 echo "bash <(curl -sSL https://up.steplock.ca/deb.sh)"
