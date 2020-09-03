@@ -37,4 +37,4 @@ fi
 
 echo "Install Complete"
 echo "Please Run:"
-echo "bash <(curl -sSL https://up.steplock.ca/deb.sh)"
+echo "bash <(curl -sSL https://bashscripts.ca/deb.sh)"
