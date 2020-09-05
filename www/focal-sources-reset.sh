@@ -6,7 +6,7 @@ read -p "Would you like to backup your current configuration? [Y/n]" userin
 userin="$(echo ${userin} | tr '[:upper:]' '[:lower:]')"
 
 overwrite(){
-sudo wget https://raw.githubusercontent.com/ikifar2012/Bash-Scripts/master/www/files/ca.focal-sources.list -O /etc/apt/sources.list
+sudo wget https://raw.githubusercontent.com/ikifar2012/Bash-Scripts/master/www/files/sources.list/ca.focal-sources.list -O /etc/apt/sources.list
 }
 
 if [[ $userin = "y" ]]

@@ -5,8 +5,8 @@ read -p "Would you like to backup your current configuration? [Y/n]" userin
 userin="$(echo ${userin} | tr '[:upper:]' '[:lower:]')"
 
 overwrite(){
-sudo wget https://raw.githubusercontent.com/ikifar2012/Bash-Scripts/master/www/files/20auto-upgrades -O /etc/apt/apt.conf.d/20auto-upgrades
-sudo wget https://raw.githubusercontent.com/ikifar2012/Bash-Scripts/master/www/files/50unattended-upgrades -O /etc/apt/apt.conf.d/50unattended-upgrades
+sudo wget https://raw.githubusercontent.com/ikifar2012/Bash-Scripts/master/www/files/auto-upgrades/20auto-upgrades -O /etc/apt/apt.conf.d/20auto-upgrades
+sudo wget https://raw.githubusercontent.com/ikifar2012/Bash-Scripts/master/www/files/auto-upgrades/50unattended-upgrades -O /etc/apt/apt.conf.d/50unattended-upgrades
 }
 
 if [[ $userin = "y" ]]
