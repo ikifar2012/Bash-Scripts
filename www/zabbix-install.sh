@@ -8,7 +8,7 @@ sudo wget https://raw.githubusercontent.com/ikifar2012/Bash-Scripts/master/www/f
 export HOSTNAME=$(hostname)
 read -p "Enter Zabbix Server IP:" ZABBIXSERVER
 export ZABBIXSERVER=$ZABBIXSERVER
-cat /tmp/zabbix-install/zabbix_agentd.conf | envsubst > /etc/zabbix/zabbix_agentd.conf
+sudo cat /tmp/zabbix-install/zabbix_agentd.conf | envsubst > /etc/zabbix/zabbix_agentd.conf
 sudo systemctl stop zabbix-agent
 sudo systemctl start zabbix-agent
 sudo systemctl enable zabbix-agent
