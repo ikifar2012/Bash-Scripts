@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir -p /tmp/zabbix-install
 sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+focal_all.deb -O /tmp/zabbix-install/zabbix-release_5.0-1+focal_all.deb
 sudo dpkg -i /tmp/zabbix-install/zabbix-release_5.0-1+focal_all.deb
 sudo apt update
@@ -11,3 +12,4 @@ cat /tmp/zabbix-install/zabbix_agentd.conf | envsubst > /etc/zabbix/zabbix_agent
 sudo systemctl start zabbix-agent
 sudo systemctl enable zabbix-agent
 echo "Zabbix agent running with hostname: $HOSTNAME"
+rm -r /tmp/zabbix-install
