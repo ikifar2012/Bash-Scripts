@@ -12,4 +12,4 @@ cat /tmp/zabbix-install/zabbix_agentd.conf | envsubst > /etc/zabbix/zabbix_agent
 sudo systemctl start zabbix-agent
 sudo systemctl enable zabbix-agent
 echo "Zabbix agent running with hostname: $HOSTNAME"
-rm -r /tmp/zabbix-install
+sudo rm -r /tmp/zabbix-install
