@@ -24,7 +24,7 @@ stages:
       - task: Docker@2
         inputs:
           containerRegistry: 'Docker Hub ikifar'
-          repository: 'ikifar/server-update-website'
+          repository: 'ikifar/bashscripts-website'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
           tags: '$(tag)'
